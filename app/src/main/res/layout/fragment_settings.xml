@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+
+        <!--My Account-->
+        <LinearLayout
+            android:id="@+id/linearChangepwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rectangle_gray_curved"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/pass" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="0.1"
+                android:text="My Account" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/right_arow" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:text="About"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+
+        <!--Privacy policy-->
+        <LinearLayout
+            android:id="@+id/linearPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/rectangle_gray_curved"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/about_black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="0.1"
+                android:text="@string/privacy_policy" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/right_arow" />
+
+        </LinearLayout>
+
+        <!--beautyPorterPolicy-->
+        <LinearLayout
+            android:id="@+id/linearbeautyPorterPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/rectangle_gray_curved"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/about_black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="0.1"
+                android:text="@string/beautyporter_policy" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/right_arow" />
+
+        </LinearLayout>
+
+        <!--RefundPolicy-->
+        <LinearLayout
+            android:id="@+id/linearRefundPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/rectangle_gray_curved"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/about_black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="0.1"
+                android:text="@string/refund_policy" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/right_arow" />
+
+        </LinearLayout>
+
+        <!--TC-->
+        <LinearLayout
+            android:id="@+id/linearTC"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/rectangle_gray_curved"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/about_black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="0.1"
+                android:text="@string/terms_and_conditions" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/right_arow" />
+
+        </LinearLayout>
+
+        <!--Suggest for friends-->
+        <LinearLayout
+            android:id="@+id/linearshare"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:visibility="invisible"
+            android:background="@drawable/rectangle_gray_curved"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/email" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="0.1"
+                android:text="Suggest for Friends" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/right_arow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

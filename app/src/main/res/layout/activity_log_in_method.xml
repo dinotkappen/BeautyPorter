@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LogInMethodActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:id="@+id/linearVendor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="60dp"
+                android:src="@mipmap/vendor"/>
+
+            <TextView
+                android:id="@+id/txtJoinVendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/round_corner_strock"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:text="Join as Vendor"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearUser"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/user_big"/>
+
+            <TextView
+                android:id="@+id/txtJoinuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/round_corner_strock"
+                android:layout_marginTop="12dp"
+                android:text="Join as User"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

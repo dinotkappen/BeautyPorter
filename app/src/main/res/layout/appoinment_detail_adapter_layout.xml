@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_top_small"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:drawableLeft="@mipmap/calender"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/calender" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:gravity="end"
+            android:drawableLeft="@mipmap/time"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtService"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:drawableLeft="@mipmap/tick"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/tick" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:gravity="end"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

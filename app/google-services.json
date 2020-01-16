@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "997051515757",
+    "firebase_url": "https://beauty-porter-251212.firebaseio.com",
+    "project_id": "beauty-porter-251212",
+    "storage_bucket": "beauty-porter-251212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997051515757:android:b5ea1cebce8da3a0221064",
+        "android_client_info": {
+          "package_name": "com.example.thebeautyporterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997051515757-7ivgls6na9lnbqb8oh6grmh857esv5pm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thebeautyporterapp",
+            "certificate_hash": "8ee083850db174bfd61e41c443aa1d11b6bcbaa3"
+          }
+        },
+        {
+          "client_id": "997051515757-seh5qnv3n1qqasj83c7v4lvcd353q9ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZX784gmjBvADI0_Wq98MWnxOPFJGkF6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997051515757-seh5qnv3n1qqasj83c7v4lvcd353q9ht.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "997051515757-ob4ttd577bvo4kjlek2kao705q4perrj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.whyte.beautyporterlaunch"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

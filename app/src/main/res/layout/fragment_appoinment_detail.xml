@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/colorWhite"
+                    android:dividerHeight="0.0px"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_gray_curved"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="100dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtOrderName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18dp" />
+
+                            <include layout="@layout/recyclerview_layout" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:id="@+id/linearCall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.1"
+                                    android:background="@color/colorGray"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:padding="6dp"
+                                        android:layout_gravity="center"
+                                        android:src="@mipmap/phone"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="6dp"
+                                        android:layout_gravity="center"
+                                        android:text="Call Now"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linearMap"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:background="@color/colorWhite"
+                                    android:layout_weight="0.1"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:padding="6dp"
+                                        android:src="@mipmap/gps"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="6dp"
+                                        android:text="View Map"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linearCancel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.1"
+                                    android:background="@color/colorGray"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textColor="@color/red"
+                                        android:text="Cancel"/>
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_small"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_gray" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgOrderHistoryDetail"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/logo" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

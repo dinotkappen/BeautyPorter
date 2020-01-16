@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundProfile"
+    tools:context=".Fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimaryDark">
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="bottom">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        app:centered="true" />
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator_banner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="190dp"
+                        app:centered="true"
+                        app:fillColor="@color/colorPrimary"
+                        app:pageColor="@color/colorWhite"
+                        app:snap="false" />
+                </RelativeLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator_items"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                app:fillColor="@color/colorWhite"
+                app:pageColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
